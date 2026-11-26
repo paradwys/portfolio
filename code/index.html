@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alys Williams Portfolio</title>
+  <meta name="description" content="Computer science graduate and junior software developer working in Java, Python and SQL.">
+  <link rel="icon" href="images/decor/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Small icons, drawn once here and reused with <svg><use href="#icon-name"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L21 13l-2 2-1.5-1.5-8 8a2 2 0 0 1-3-3l8-8L13 9l2-2 1.5 1.5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2c.6 5 2 9 10 10-8 1-9.4 5-10 10-.6-5-2-9-10-10 8-1 9.4-5 10-10Z"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9Zm4 2v5c3 3 9 3 12 0v-5M22 9v6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 6l9 7 9-7"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2-6-2.5m12 4.5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6.2 0C6.6 2.8 5.6 3.1 5.6 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM8 10v6M8 7.5v.01M12 16v-6m0 3c0-2 4-3 4 0v3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+  </svg>
+
+  <!-- Navigation bar: stays at the top while you scroll -->
+  <header class="nav">
+    <a class="brand" href="#top">Alys Williams</a>
+    <button class="menu" id="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav id="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#beyond">Beyond code</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ========== Hero ========== -->
+    <section class="hero band">
+      <!-- Painted rose corner in the top-left of the page -->
+      <img class="decor hero-roses" src="images/decor/rose-corner.webp" alt="" aria-hidden="true">
+
+      <figure class="portrait">
+        <img class="photo" src="images/me.jpg" alt="Alys Williams smiling, wearing headphones and black lace">
+      </figure>
+
+      <div class="hero-text">
+        <h1>Alys Williams</h1>
+        <p class="subtitle">Computer scientist and developer</p>
+        <p class="intro">Computer science graduate and bootcamp developer. I build careful, well-tested backend code in Java and Python, and I like turning messy data into something useful.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <dl class="panel status">
+          <img class="decor curl" src="images/decor/thorn-curl-roses.webp" alt="" aria-hidden="true">
+          <div><dt>Available</dt><dd><span class="dot"></span>Open to junior developer and data roles</dd></div>
+          <div><dt>Right now</dt><dd>Software development bootcamp, TechNative</dd></div>
+          <div><dt>Studied</dt><dd>BSc Computer Science, University of Sussex, 2:1</dd></div>
+          <div><dt>Core skills</dt><dd>Java, Python, SQL, testing, machine learning</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><img src="images/decor/thorn-wave-roses.webp" alt=""></div>
+
+    <!-- ========== About ========== -->
+    <section id="about" class="band about">
+      <div>
+        <h2>About me</h2>
+        <p>I graduated from the University of Sussex in 2026 and I'm now on a software development bootcamp, working in teams with Git, automated tests and AI coding assistants. Before that I spent a summer as a software developer intern at Pitch Technologies, building a Java component that turned vehicle identifiers into AI-generated images.</p>
+        <p>I'm a perfectionist and I prefer to work on the parts of a system people don't see: the logic, the data and the code that has to keep working. I'd rather understand a problem properly than guess, and I don't trust code until I've tested it.</p>
+      </div>
+      <div class="panel toolkit">
+        <img class="decor thorns" src="images/decor/thorn-corner-roses.webp" alt="" aria-hidden="true">
+        <h3>Toolkit</h3>
+        <div class="row"><svg class="ic"><use href="#i-code"/></svg><h4>Languages</h4><p class="tags"><span>Java</span><span>Python</span><span>SQL</span><span>JavaScript</span><span>PHP</span><span>HTML</span><span>CSS</span></p></div>
+        <div class="row"><svg class="ic"><use href="#i-layers"/></svg><h4>Data and machine learning</h4><p class="tags"><span>PyTorch</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></p></div>
+        <div class="row"><svg class="ic"><use href="#i-tool"/></svg><h4>Tools</h4><p class="tags"><span>Git and GitHub</span><span>Docker</span><span>IntelliJ IDEA</span><span>PyCharm</span><span>Jupyter</span></p></div>
+        <div class="row"><svg class="ic"><use href="#i-spark"/></svg><h4>Exploring</h4><p class="tags"><span>React</span><span>TypeScript</span><span>FastAPI</span></p></div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><img src="images/decor/thorn-wave-roses.webp" alt=""></div>
+
+    <!-- ========== Projects ========== -->
+    <section id="projects" class="band projects">
+      <h2>Projects</h2>
+      <p class="lead-in">Research, data science and team web development, finished and in progress.</p>
+
+      <!-- In progress. To add one, copy an <article class="project wip"> block and change the text.
+           When it's finished, move it down into the "Finished" list. -->
+      <h3 class="sub-title">In progress</h3>
+      <div class="project-grid wip-grid">
+        <article class="project wip butterfly">
+          <div class="thumb blank wing" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M30 18v28"/><path d="M30 24C24 10 8 8 8 18s8 12 22 10"/><path d="M30 24c6-14 22-16 22-6s-8 12-22 10"/><path d="M30 30c-10 0-18 4-16 12s12 4 16-6"/><path d="M30 30c10 0 18 4 16 12s-12 4-16-6"/><path d="M30 18l-4-8m4 8 4-8"/></svg></div>
+          <div class="body">
+            <p class="stage">Planning and data exploration</p>
+            <h3>Butterflies and weather</h3>
+            <p>Does the weather change when UK butterflies appear, and how many there are? I'm joining UK Butterfly Monitoring Scheme counts with historical weather data to test simple hypotheses, starting with one I wrote down before looking at the data: in warmer springs, butterflies fly earlier.</p>
+            <ul class="points">
+              <li>Database schema and raw SQL designed by hand, no ORM</li>
+              <li>Linear regression written from scratch in NumPy, then checked against scikit-learn and PyTorch</li>
+              <li>Tested on held-out years and shuffled weather, so it can't learn from the future or fit noise</li>
+            </ul>
+            <p class="next"><strong>Next step:</strong> exploring the UKBMS data on GBIF. Started November 2026; version 1 has 7 milestones.</p>
+            <p class="tags"><span>Python</span><span>pandas</span><span>NumPy</span><span>SQLite</span><span>FastAPI</span><span>PyTorch</span></p>
+          </div>
+        </article>
+        <article class="project wip">
+          <div class="thumb blank"><img src="images/decor/leaf-sprig.webp" alt=""></div>
+          <div class="body">
+            <p class="stage planned">Planned</p>
+            <h3>PHP security for my websites</h3>
+            <p>An idea for my next project: adding PHP security to my websites. It's at the idea stage, so there are no details yet.</p>
+            <p class="next"><strong>Next step:</strong> decide on scope and plan the first version.</p>
+            <p class="tags"><span>PHP</span><span>Security</span></p>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="sub-title">Finished</h3>
+      <div class="project-grid">
+
+        <article class="project featured">
+          <img class="thumb" src="images/bee.jpg" alt="A bumblebee feeding on a purple anemone" loading="lazy">
+          <div class="body">
+            <p class="stage">Dissertation</p>
+            <h3>Finding patterns in how bees move</h3>
+            <p>Watching bees by hand to label every behaviour doesn't scale. I trained a neural network to learn the shape of their movement on its own, then grouped similar movements to see which patterns emerged.</p>
+            <ul class="points">
+              <li>Cleaned, segmented, interpolated and standardised 3D movement trajectories from 50 bees</li>
+              <li>Trained a convolutional autoencoder in PyTorch on the unlabelled data</li>
+              <li>Clustered the learned features with MiniBatch K-means and checked them with silhouette scores, including where the biology stops supporting the maths</li>
+            </ul>
+            <p class="tags"><span>Python</span><span>PyTorch</span><span>scikit-learn</span><span>Clustering</span></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img class="thumb" src="images/fridgemate.jpg" alt="The Fridgemate home page, showing a fridge list of avocado, broccoli and eggs" loading="lazy">
+          <div class="body">
+            <p class="stage">Team project</p>
+            <h3>Fridgemate</h3>
+            <p>A website that tracks what's in your fridge and suggests recipes from it, to cut food waste. Built with AI-assisted development; I led testing.</p>
+            <p class="tags"><span>Testing</span><span>Web app</span><span>AI-assisted</span></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="thumb blank connect" aria-hidden="true"><svg viewBox="0 0 60 60"><circle cx="30" cy="16" r="6"/><circle cx="14" cy="42" r="6"/><circle cx="46" cy="42" r="6"/><path d="M26 21 18 37M34 21l8 16M20 42h20"/></svg></div>
+          <div class="body">
+            <p class="stage">Bootcamp team project</p>
+            <h3>Bootcamp Connect</h3>
+            <p>A five-person web app. I ran about 300 backend, 39 frontend and 19 end-to-end tests in Docker, fixed bugs with Claude and reviewed every fix.</p>
+            <p class="tags"><span>pytest</span><span>Playwright</span><span>Docker</span></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img class="thumb" src="images/mnist.jpg" alt="A grid of nine handwritten MNIST digits, each correctly classified by the network" loading="lazy">
+          <div class="body">
+            <p class="stage">Coursework</p>
+            <h3>Handwritten digit recognition</h3>
+            <p>A convolutional neural network in PyTorch that reached 96.6% test accuracy on the MNIST digits.</p>
+            <p class="tags"><span>PyTorch</span><span>CNN</span><span>Classification</span></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="thumb blank lines" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M12 18h2m6 0h28M12 30h2m6 0h28M12 42h2m6 0h20"/></svg></div>
+          <div class="body">
+            <p class="stage">Coursework</p>
+            <h3>Sentence classification</h3>
+            <p>Compared BERT with a support vector machine on labelled text, paying close attention to class imbalance and fair evaluation.</p>
+            <p class="tags"><span>BERT</span><span>NLP</span><span>scikit-learn</span></p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><img src="images/decor/thorn-wave-roses.webp" alt=""></div>
+
+    <!-- ========== Experience ========== -->
+    <section id="experience" class="band experience">
+      <h2>Experience and education</h2>
+      <ol class="timeline">
+        <li>
+          <p class="when">Sep 2026 to now</p>
+          <div class="panel entry">
+            <svg class="ic"><use href="#i-layers"/></svg>
+            <div>
+              <h3>Software development bootcamp, TechNative</h3>
+              <p>Team development, testing, Git workflows and getting the best out of AI coding assistants.</p>
+              <p class="tags"><span>Teamwork</span><span>Testing</span><span>Git</span><span>Docker</span></p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p class="when">2026</p>
+          <div class="panel entry">
+            <svg class="ic"><use href="#i-cap"/></svg>
+            <div>
+              <h3>BSc (Hons) Computer Science, University of Sussex</h3>
+              <p>Upper second class (2:1).</p>
+              <p class="tags"><span>Databases</span><span>Machine learning</span><span>Neural networks</span><span>NLP</span></p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p class="when">Jun to Jul 2025</p>
+          <div class="panel entry">
+            <svg class="ic"><use href="#i-code"/></svg>
+            <div>
+              <h3>Software developer intern, Pitch Technologies</h3>
+              <ul class="points">
+                <li>Built a Java component that turned SISO vehicle identifiers into prompts and generated images through the DALL·E API</li>
+                <li>Designed a database lookup so existing images were reused instead of generated again</li>
+                <li>Compared image services on cost, licensing and quality, and demoed the finished component ahead of schedule</li>
+              </ul>
+              <p class="tags"><span>Java</span><span>API integration</span><span>SQL</span><span>Research</span></p>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <div class="divider" aria-hidden="true"><img src="images/decor/thorn-wave-roses.webp" alt=""></div>
+
+    <!-- ========== Beyond code ========== -->
+    <section id="beyond" class="band beyond">
+      <h2>Beyond the code</h2>
+      <p class="lead-in">The things I do away from a keyboard say as much about how I work as my projects do.</p>
+      <div class="life">
+        <article class="panel">
+          <img class="pic photo-pic" src="images/archery.jpg" alt="Alys drawing a purple recurve bow in a sports hall, dressed in black lace" loading="lazy">
+          <h3>Archery</h3>
+          <p>As secretary of the university archery society I handled committee communication and memberships, and helped run a taster session that drew twice the people we expected.</p>
+        </article>
+        <article class="panel">
+          <div class="pic" aria-hidden="true"><img src="images/decor/rose-plum.webp" alt=""></div>
+          <h3>Pole fitness</h3>
+          <p>I taught pole fitness at university, adapting each class to people of very different experience and keeping everyone safe.</p>
+        </article>
+        <article class="panel">
+          <img class="pic photo-pic" src="images/silksong.jpg" alt="Hollow Knight: Silksong game completion screen showing a time of 47 hours 43 minutes 52 seconds" loading="lazy">
+          <h3>Gaming</h3>
+          <p>I love atmospheric, challenging games. My completed run of Hollow Knight: Silksong clocked in at 47 hours 43 minutes.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><img src="images/decor/thorn-wave-roses.webp" alt=""></div>
+
+    <!-- ========== Contact ========== -->
+    <section id="contact" class="band contact">
+      <div class="panel talk">
+        <img class="decor thorns" src="images/decor/thorn-corner-roses.webp" alt="" aria-hidden="true">
+        <h2>Let's talk</h2>
+        <p>I'm looking for a junior developer or data role, and I'm open to small freelance projects. If you'd like to talk about an opportunity or a project, I'd love to hear from you.</p>
+        <p class="links">
+          <a class="btn" href="mailto:nyxw696@outlook.com"><svg class="ic"><use href="#i-mail"/></svg>nyxw696@outlook.com</a>
+          <a class="btn" href="https://github.com/paradwys"><svg class="ic"><use href="#i-github"/></svg>GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/alys-williams-b85b98253"><svg class="ic"><use href="#i-linkedin"/></svg>LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p><span class="brand">Alys Williams</span> <span>&copy; <span id="year">2026</span>. This site was first vibe coded with Claude, and I'm now recreating it by hand.</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
